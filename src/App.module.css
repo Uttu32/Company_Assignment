@@ -10,10 +10,9 @@
 }
 
 .Header {
-  border: 1px solid pink;
   display: flex;
   gap: 50rem;
-  background-color: #cb1616;
+  background-color: black;
   align-items: center;
   width: 100vw;
   height: 7vh;
@@ -34,7 +33,15 @@
 
 .rightSection > span {
   cursor: pointer;
+  color: white;
+  font-size: large;
 }
+
+.rightSection > span:hover{
+  border-bottom: 2px solid white;
+}
+
+
 
 .Droppable {
   position: absolute;
@@ -46,62 +53,18 @@
   display: none;
 }
 
-@media (max-width: 1280px) and (min-width: 601px) {
-  /* .Responsive_View {
-    display: flex;
-    border: 2px solid green;
-    position: relative;
-    left: -210px;
-  }
-
-  .responsiveDrop {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-  }
-
-  .Responsoive_Drop_Link {
-    width: 100%;
-  }
-
-  .rightSection {
-    display: none;
-  }
-
+@media (max-width: 1023px) and (min-width: 601px){
   .Header {
     display: flex;
-    justify-content: space-around;
-    max-width: 100vw;
-  } 
-  
-  
-  display: block;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: rgb(39, 16, 16);
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-    z-index: 3;
-  */
-
-
-  .Header {
-    display: flex;
-    height: 30px;
-    border: 2px solid black;
-    /* max-width: 100vw; */
+    height: 10%;
     gap: 0px;
-    width: 300px;
+    width: 100%;
+    align-items: center;
+    background-color: #536878;
   }
 
   .Header > div > img {
-    width: 20px;
+    width: 23%;
   }
 
   .rightSection {
@@ -110,9 +73,15 @@
 
   .Responsive_View {
     display: flex;
-    height: 20px;
+    flex-direction: column;
+    height: 3rem;
     margin-right: 1rem;
     gap: 0;
+    
+  }
+
+  .Responsive_View>span{
+    transition: all 0.5s ease;
   }
 
   .Responsoive_Drop_Link {
@@ -120,9 +89,86 @@
   }
 
   .responsiveDrop {
+    position: absolute;
+    right: 0;
+    top: 7rem;
+    width: 100vw;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    background-color: #91A3B0;
+    text-align: center;
+  }
+  
+  .responsiveDrop>span{
+    height: 5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: larger;
+    color: white;    
+  }
+}
+
+
+@media (max-width: 600px) and (min-width: 360px){
+  .Header {
+    display: flex;
+    height: 10%;
+    background-color: #536878;
+    gap: 0px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .Header > div > img {
+    width: 13%;
+  }
+
+  .rightSection {
+    display: none;
+  }
+
+  .Responsive_View {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    margin-bottom: 1.7rem;
+    gap: 0;
+    
+  }
+
+  .Responsive_View>span{
+    transition: all 0.5s ease;
+  }
+
+  .Responsoive_Drop_Link {
     width: 100%;
+  }
+
+  .responsiveDrop {
+    position: absolute;
+    right: 0;
+    top: 4.6rem;
+    width: 100vw;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    background-color: #91A3B0;
+    text-align: center;
+  }
+  
+  .responsiveDrop>span{
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: medium;
+    color: white;    
   }
 }

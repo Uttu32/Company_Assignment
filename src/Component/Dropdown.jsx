@@ -3,7 +3,7 @@ import Styles from './Dropdown.module.css';
 
 // Desktop displays: 1024×768 through 1920×1080
 // Mobile displays: 360×640 through 414×896
-// Tablet displays: 601×962 through 1280×800
+// Tablet displays: 601×962 through 1023×800
 
 export default function Dropdown(props) {
 

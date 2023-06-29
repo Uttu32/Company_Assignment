@@ -87,13 +87,16 @@ function App() {
         </div>
 
         <div className={Styles.Responsive_View}>
-          <button onClick={() => setShowMenu(!showMenu)}>
-            {showMenu ? <CloseIcon 
-            sx = {{height:"10px", width:'17px'}}
-            />  : <MenuIcon 
-            sx = {{height:"10px", width:'17px'}}
-            /> }
-          </button>
+          <span onClick={() => {setShowMenu(!showMenu)
+          setIsDropped({
+            About: false,
+            Classes: false,
+            Contact: false,
+            Careers: false,
+          })
+          }}>
+            {showMenu ? <CloseIcon sx={{fontSize:'3rem', color:'white'}} />  : <MenuIcon  sx={{fontSize:'3rem', color:'white', marginBottom:'5rem'}} /> }
+          </span>
 
           {showMenu && (
             <div className={Styles.responsiveDrop}>

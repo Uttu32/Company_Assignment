@@ -3,6 +3,8 @@ import Styles from "./App.module.css";
 import Dropdown from "./Component/dropdown";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from '@mui/icons-material/Close';
+import Section2 from "./Component/Section 2/Section2";
+import Section3 from "./Component/Section 3/Section3";
 
 function App() {
   const [isDropped, setIsDropped] = useState({
@@ -122,6 +124,10 @@ function App() {
           )}
         </div>
       </nav>
+
+      <Section2 />
+
+      <Section3 />
     </div>
   );
 }
